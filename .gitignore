@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 数据文件（太大，不进git，用download脚本重新获取）
+data/raw/
+data/processed/
+
+# 模型权重
+*.safetensors
+*.gguf
+output/
+
+# 系统
+.DS_Store
