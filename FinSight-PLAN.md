@@ -198,7 +198,16 @@ output_dir: ./output/fin-qwen25-7b-lora
 - [x] 完成需求调研（医疗/法律/金融方向对比）
 - [x] 确定技术选型（Qwen2.5-7B + CFGPT + LangGraph）
 - [x] 完成项目架构设计
-- [ ] 下一步：开始Week 1数据处理
+- [x] 创建GitHub仓库并推送：https://github.com/ZZZZihan/FinSight
+- [x] LangGraph State/checkpoint机制验证（模拟脚本：并行扇出、reducer合并、SQLite持久化均跑通）
+- [x] 本机部署 qwen2.5:7b-instruct（Ollama，M2 Ultra 64GB）
+- [x] 基座模型金融能力基线测试：4个Agent prompt全部跑通
+  - 事件检测：5类事件全部正确提取
+  - 情感分析：判断"中性"，依据合理但偏保守
+  - 摘要/主题分解：可用，深度一般
+  - 推理速度：首次22.6s（含模型加载），后续0.4-0.8s/次
+  - 结论：基线可用；微调价值点 = 输出格式稳定性 + 金融术语专业度 + 情感判断敏锐度
+- [ ] 下一步：Week 1 数据处理（下载CFGPT数据集、预处理、采样54万）
 
 ---
 
