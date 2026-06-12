@@ -133,7 +133,6 @@ flowchart LR
 
 | 用途 | 选用 | 候选对比 | 选择理由 |
 |------|------|---------|---------|
-| Web框架 | FastAPI | Flask / Django | JD点名；原生async配合LLM流式输出；自动生成Swagger文档，面试官扫一眼接口设计 |
 | 流式输出 | SSE (StreamingResponse) | WebSocket | 单向推送场景SSE更简单，浏览器原生支持；WebSocket用于双向场景，此处不需要 |
 | 前端 | Gradio | Streamlit / 手写Vue | 内置Chatbot+文件上传组件；一行代码挂HF Spaces公网演示；Streamlit偏数据看板 |
 | 演示部署 | HuggingFace Spaces | 阿里云ECS / Vercel | 免费、自带GPU可选、面试官点链接即用；ECS要钱要运维 |
